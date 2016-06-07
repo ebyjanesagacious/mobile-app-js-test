@@ -1,0 +1,257 @@
+@font-face {
+  font-family: din;
+  src: url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-2abde5b5c1856f0047a5e31b76194f51.eot);
+  src: url(https://assets-0.housingcdn.com/website/fonts/DIN-f54b77f68f4799e06bc63a997bf41bad.woff2) format("woff2"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-03ce59b12f93bf1a20dc697f5cc45f87.woff) format("woff"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-0ff7f64683bc1fb19dae587058e39a52.svg) format("svg"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-dee558ff55ede348ab13941b3adecdb3.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: din;
+  src: url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-Medium-40a56f75c15218626a04d59f5ffa3e86.eot);
+  src: url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-Medium-3b28363695b50716c9a0e9c08dc21053.woff2) format("woff2"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-Medium-922cc008ae29b0245bc3a15add7b01d2.woff) format("woff"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-Medium-399e8ca47fd78456d517b43a59cf94ce.ttf) format("truetype"), url(https://takeajob.s3.amazonaws.com/assets/fonts/DIN-Medium-3df622c31d86fdd0a9066a3e760b868e.svg) format("svg");
+  font-weight: 700;
+  font-style: normal; }
+body {
+  font-family: "din";
+  line-height: 1.42857143;
+  letter-spacing: 0.3px; }
+
+.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #909191; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #909191; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #909191;
+  opacity: 1; }
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #909191;
+  opacity: 1; }
+
+html, body {
+  min-height: 100%; }
+
+#holder {
+  min-height: 100%;
+  position: relative; }
+
+#test {
+  margin-top: 60px;
+  padding-bottom: 150px;
+  /* height of footer */ }
+
+.loginbtn {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  height: 50px; }
+  .loginbtn .login1 {
+    border-radius: 0px;
+    background-color: #333333;
+    color: white;
+    font-size: 13px;
+    font-family: "din";
+    height: 40px;
+    text-align: center;
+    padding-top: 10px; }
+	.loginbtn .login1 #previous {
+	float: left;
+	padding-left:2%;
+	}
+    .loginbtn .login1 #close {
+      float: right;
+      padding-right: 2%; }
+
+.mobemail {
+  margin-top: 30px;
+  }
+  .mobemail .link {
+    text-decoration: none; }
+  .mobemail .mobile {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-style: solid;
+    background-color: #09a5e3;
+    border-top-color: #B3B3B3;
+    border-left-color: #B3B3B3;
+    border-bottom-color: #B3B3B3;
+    height: 30px;
+    text-align: center;
+    padding-top: 6px; }
+    .mobemail .mobile .textcolor {
+      color: white;
+      font-size: 13px;
+      text-align: center; }
+  .mobemail .emailId {
+    border: 1px solid #B3B3B3;
+    height: 30px;
+    text-align: center;
+    padding-top: 6px; }
+    .mobemail .emailId .textcolor {
+      color: #333333;
+      font-size: 13px;
+      text-align: center; }
+
+.error {
+  display: none;
+  color: red; }
+
+.formfields .align {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top:30px;  }
+  .formfields .align .emailorphone {
+    color: #909191;
+    font-size: 12px;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #B3B3B3;
+    padding-left: 8%; }
+  .formfields .align .phone {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 2%;
+    padding: 9px 0;
+    color: #909191;
+    top: 3px; }
+  .formfields .align ::-webkit-input-placeholder {
+    /* Chrome */
+    color: #909191; }
+  .formfields .align :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #909191; }
+  .formfields .align ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #909191;
+    opacity: 1; }
+  .formfields .align :-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #909191;
+    opacity: 1; }
+  .formfields .align .your-class::-webkit-input-placeholder {
+    color: red; }
+  .formfields .align .your-class::-moz-placeholder {
+    color: red; }
+  .formfields .align .your-class:-ms-input-placeholder {
+    color: red; }
+  .formfields .align .your-class:-moz-placeholder {
+    color: red; }
+
+.formfields2 .align {
+  padding-left: 2%;
+  padding-right: 2%; }
+  .formfields2 .align .password {
+    color: #909191;
+    font-size: 12px;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #B3B3B3;
+    border-top: 0 solid;
+    padding-left: 8%; }
+  .formfields2 .align a {
+    font-size: 13px;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    color: #333333;
+    font-weight: 600; }
+  .formfields2 .align .password2 {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 2%;
+    padding: 7px 0;
+    color: #909191;
+    top: 7px; }
+  .formfields2 .align ::-webkit-input-placeholder {
+    /* Chrome */
+    color: #909191; }
+  .formfields2 .align :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #909191; }
+  .formfields2 .align ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #909191;
+    opacity: 1; }
+  .formfields2 .align :-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #909191;
+    opacity: 1; }
+
+.formfields3 .align {
+  padding-left: 2%;
+  padding-right: 2%; }
+  .formfields3 .align .textcolor3 {
+    color: #09a5e3;
+    font-size: 12px;
+    float: right; 
+	padding-top:10px;}
+
+.formfields4 .align {
+  padding-left: 2%;
+  padding-right: 2%; }
+  .formfields4 .align #checkbox {
+    margin-right: 8px;
+    top: 3px;
+    position: relative;
+    margin-left: 2%;
+    width: 15px;
+    height: 15px; }
+  .formfields4 .align .textcolor4 {
+    color: #09a5e3;
+    font-size: 13px; }
+  .formfields4 .align .textcolor5 {
+    color: #333333;
+    font-size: 13px;
+    font-weight: 600; }
+
+.loginreg {
+  position: fixed;
+  width: 100%;
+  bottom: 0%; }
+  .loginreg .fixregister {
+    bottom: 0; }
+    .loginreg .fixregister .register {
+      border-radius: 0px;
+      height: 40px;
+      background-color: #333333;
+      color: white;
+      font-size: 13px;
+      font-family: "din"; }
+  .loginreg .fixlogin .login2 {
+    border-radius: 0px;
+    height: 40px;
+    background-color: #09a5e3;
+    color: white;
+    font-size: 13px;
+    font-family: "din"; }
+  .loginreg .fixor {
+    height: 40px; }
+    .loginreg .fixor .styletext {
+      font-size: 13px;
+      text-align: center;
+      vertical-align: center;
+      height: 40px;
+      color: #333333;
+      padding-top: 11px; }
+    .loginreg .fixor .styleline {
+      color: #333333; }
+      .loginreg .fixor .styleline .hrcolor {
+        border-color: #333333;
+        margin-top: 20px; }
+
+/*# sourceMappingURL=login.css.map */

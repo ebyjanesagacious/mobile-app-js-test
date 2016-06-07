@@ -1,0 +1,41 @@
+<div>
+	<h1>Company CRUD</h1>	
+	<p>{{ message }}</p>
+	<div ng-show="companies.length > 0">
+	<a class="btn btn-primary" href="#/company/create">
+		<i class="glyphicon glyphicon-plus"></i> Create
+	</a>
+	<table class="table table-striped table-hover">
+	<thead>
+	<th>Company Name</th>
+	<th>Company Details</th>
+	<th>Website</th>
+	<th>Established In</th>
+	<th style="width:80px;">Action&nbsp;</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="data in companies">
+			<td>{{data.tj_cm_company_name}}</td>
+			<td>{{data.tj_cm_company_details}}</td>
+			<td>{{data.	tj_cm_website_address}}</td>
+			<td>{{data.tj_cm_established}}</td>
+			
+			
+			<td>
+			<a class="btn btn-primary btn-xs" href="#/company/update/{{data.tj_cm_id}}">
+				<i class="glyphicon glyphicon-pencil"></i>
+			</a> 
+			<a class="btn btn-danger btn-xs" ng-click="deleteCompany(data.tj_cm_id)">
+				<i class="glyphicon glyphicon-trash"></i>
+			</a>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+	<div ng-show="companies.length == 0">
+		Empty
+	</div>
+</div>
+  <script src="models/company.js"></script>
+  <script src="controllers/company.js"></script>

@@ -1,0 +1,96 @@
+<link href="assets/css/login.css" rel="stylesheet" property="stylesheet" type="text/css">
+
+<div id="holder" ng-controller="loginController">
+<form action="/" name="login">
+<div class="loginbtn">
+<div class="login1">
+<span>
+<a href="" ng-click="closepage()"><img  alt="previous" id="previous" src="assets/images/previous.png"/></a>
+Login
+<a href="" ng-click="closepage()"><img  id="close" alt="close" src="assets/images/close.png"/></a>
+</span>
+</div>
+</div>
+
+<div class="container">
+<div class="mobemail">
+<div class="col-xs-2 col-sm-2 col-md-2">
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 mobile">
+
+<a  class="link"><span class="textcolor">Mobile</span></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 emailId">
+<a  class="link"><span class="textcolor">Email ID</span></a>
+</div>
+<div class="col-xs-2 col-sm-2 col-md-2">
+</div>
+</div>
+
+<div class="formfields">
+<div class="col-xs-12 col-sm-12 col-md-12 align">
+
+<img class="phone" alt="mobile" src="assets/images/mobile.png"/>
+<input type="tel" maxlength="10" placeholder="Enter Your Mobile Number" ng-model="emailorphone" name="emailorphone" class="emailorphone" required>
+<!-- <div ng-message="login.emailorphone.$error"> -->
+	<div class="ep-message"></div>
+</div>
+</div>
+</div>
+
+<div class="formfields2">
+<div class="col-xs-12 col-sm-12 col-md-12 align">
+<img class="password2" alt="password" src="assets/images/password.png"/>
+<input type="password" placeholder="Enter Password" class="password" ng-model="password">
+<div class="password-message"></div>
+<a class="showhidepwd" href="">Show</a>
+</div> 
+</div> 
+ 
+
+
+<div class="formfields3">
+<div class="col-xs-12 col-sm-12 col-md-12 align">
+<a class="textcolor3" href="#/site/forgotPassword">Forgot Password ?</a>
+</div>
+</div>
+
+
+
+
+
+<div class="formfields4">
+<div class="col-xs-12 col-sm-12 col-md-12 align">
+<p ><input type="checkbox" id="checkbox"><span class="textcolor5">I agree to </span><a href="#/site/termsAndConditions" class="textcolor4">Term & Condition</a></p>
+</div>
+</div>
+
+</div>
+
+
+<div class="loginreg">
+<div class="fixlogin">
+<button type="button" class="btn btn-lg btn-block login2" ng-click="login()">Login</button>
+</div>
+<div class="fixor">
+<div class="col-xs-4 col-sm-4 col-md-4">
+</div>
+<div class="col-xs-1 col-sm-1 col-md-1 styleline">
+<hr class="hrcolor">
+</div>
+<div class="col-xs-2 col-sm-2 col-md-2 styletext">
+Or
+</div>
+<div class="col-xs-1 col-sm-1 col-md-1 styleline">
+<hr class="hrcolor">
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4">
+</div>
+</div>
+<div class="fixregister">
+<button type="button" class="btn btn-lg btn-block register" onclick="window.location.href='#/site/register'">Register with Us</button>
+</div>
+</div>
+</form>
+</div>
+<script src="assets/js/login.js"></script>

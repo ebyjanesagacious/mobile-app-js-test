@@ -1,0 +1,19 @@
+<div>
+	<h1>State CRUD</h1>
+	
+	<p>{{ message }}</p>
+	<form role="form" name="myForm">
+		<div class= "form-group" ng-class="{error: myForm.tj_countryname.$invalid}">
+			<label> Country </label>
+			<div>
+			<input name="tj_countryname" ng-model="country.tj_countryname" type= "text" class= "form-control" placeholder="Country Name" required/>
+			<span ng-show="myForm.tj_countryname.$dirty && myForm.tj_countryname.$invalid" class="help-inline">Country Name Required</span>
+			</div>
+		</div>
+	  
+		<a href="#/country/index" class="btn btn-default">Cancel</a>
+		<button ng-click="createCountry(country);" 
+                ng-disabled="myForm.$invalid"
+                type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>

@@ -1,0 +1,11 @@
+<widget version="0.0.1">
+        <name>TakeaJob App</name>
+        <description>
+            Job Portal for searching jobs in your cities
+        </description>
+        <author email="eby.jane@gmail.com" href="http://cordova.io">
+            TakeaJob Team
+        </author>
+        <content src="index.html" />
+        <access origin="https://api.takeajob.com" />
+    </widget>

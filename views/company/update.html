@@ -1,0 +1,39 @@
+<div>
+	<h1>Update Company</h1>
+	
+	<p>{{ message }}</p>
+	<form role="form" name="myForm">
+		<div class= "form-group" ng-class="{error: myForm.tj_cm_company_name.$invalid}">
+			<label> Company </label>
+			<div>
+			<input name="tj_cm_company_name" ng-model="company.tj_cm_company_name" type= "text" class= "form-control" placeholder="Company" required/>
+			<span ng-show="myForm.tj_cm_company_name.$dirty && myForm.tj_cm_company_name.$invalid" class="help-inline">Company Required</span>
+			</div>
+		</div>
+		<div class= "form-group">
+			<label> Company Details </label>
+			<div>
+			<textarea name="tj_cm_company_details" ng-model="company.tj_cm_company_details" class= "form-control" placeholder= "Company Details"></textarea>
+			</div>
+		</div>
+		<div class= "form-group" ng-class="{error: myForm.tj_cm_website_address.$invalid}">
+			<label> Website </label>
+			<div>
+			<input name="tj_cm_website_address" ng-model="company.tj_cm_website_address" type= "text" class= "form-control" placeholder="Website" required/>
+			<span ng-show="myForm.tj_cm_website_address.$dirty && myForm.tj_cm_website_address.$invalid" class="help-inline">Website Required</span>
+			</div>
+		</div>		
+		<div class= "form-group" ng-class="{error: myForm.tj_cm_established.$invalid}">
+			<label> Established </label>
+			<div>
+			<input name="tj_cm_established" ng-model="company.tj_cm_established" type= "text" class= "form-control" placeholder="Established In" required/>
+			<span ng-show="myForm.tj_cm_established.$dirty && myForm.tj_cm_established.$invalid" class="help-inline">Established In Required</span>
+			</div>
+		</div>	
+	  
+		<a href="#/company/index" class="btn btn-default">Cancel</a> 
+		<button ng-click="updateCompany(company);" 
+                ng-disabled="isClean() || myForm.$invalid"
+                type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>
